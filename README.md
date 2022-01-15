@@ -11,9 +11,10 @@ For each of ~270 maize inbreds, as well as active transposon lines BonnMu and Un
 | ---- | -----------|
 | 1 | Map short-read bam files to Mutator TE sequence |
 | 2 | Blast bam files against Mutator TE sequence |
-| 3 | Filter blast outputs, construct insertion matrix |
-| 4 | Identify what gene region each insertion is inserting into |
-| 5 | Result data exploration and visualization | <br>
+| 3 | Filter blast outputs|
+| 4 | Construct insertion matrix |
+| 5 | Identify what gene region each insertion is inserting into |
+| 6 | Result data exploration and visualization | <br>
 
 ** NOTE: Only a small sample of code used as part of this project is included in this repository. All scripts will be uploaded after findings are published. <br>
 
