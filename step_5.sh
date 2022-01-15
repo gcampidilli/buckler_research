@@ -10,7 +10,6 @@ INBRED=$LINE
 echo "Inbred is $INBRED"
 
 echo "Running insertion categorization Rscript on $INBRED"
-#Rscript --vanilla insertion_categorization_terminal.R ${INBRED} generegion_summary/${INBRED}_gr_summary.csv
 Rscript --vanilla insertion_categorization_terminal.R ${INBRED} generegion_summary/${INBRED}_gr_summary.csv insertion_dat_categorized/${INBRED}_dat_cat.csv generegion_summary/graphs/${INBRED}_per1kb.png
 
 done < ./inbred_list.txt
