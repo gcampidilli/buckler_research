@@ -12,7 +12,7 @@ For each of ~270 maize inbreds, as well as active transposon lines BonnMu and Un
 | 1 | Map short-read bam files to Mutator TE sequence |
 | 2 | Blast bam files against Mutator TE sequence |
 | 3 | Filter blast outputs|
-| 4 | Construct insertion matrix |
+| 4 | Construct TE insertion matrix |
 | 5 | Identify what gene region each TE inserted into (ex. "Promoter","UTR5", "Exon", "Intron", "UTR3", "Intergenic")|
 | 6 | Combine with phenotype data and visualize results | <br>
 
