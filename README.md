@@ -13,4 +13,6 @@ For each of the ~270 maize inbreds:
 | 2 | Blast bam files against Mutator TE sequence |
 | 3 | Filter blast outputs, construct insertion matrix |
 | 4 | Identify what gene region each insertion is inserting into |
-| 5 | Result data exploration and visualization |
+| 5 | Result data exploration and visualization | <br>
+
+** NOTE: Only a small sample of code used as part of this project is included in this repository. All scripts will be uploaded after findings are published.
