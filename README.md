@@ -15,4 +15,7 @@ For each of ~270 maize inbreds, as well as active transposon lines BonnMu and Un
 | 4 | Identify what gene region each insertion is inserting into |
 | 5 | Result data exploration and visualization | <br>
 
-** NOTE: Only a small sample of code used as part of this project is included in this repository. All scripts will be uploaded after findings are published.
+** NOTE: Only a small sample of code used as part of this project is included in this repository. All scripts will be uploaded after findings are published. <br>
+
+step_1.sh includes combine_bams_to_fasta.R <br>
+step_5.sh includes insertion_categorization_terminal.R and combine_summaries.R <br>
