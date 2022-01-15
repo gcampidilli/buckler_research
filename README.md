@@ -3,7 +3,7 @@
 Buckler Lab for Maize Genetics and Diversity: https://www.maizegenetics.net/ <br>
 
 My research questions: <br>
-How are Mutator TEs conserved across maize genotypes and across the andropogoneae clade? And how does climate impact accumulation and distribution of Mutator TEs across both taxa? <br>
+How are Mutator transposable elements (TEs) conserved across maize genotypes and across the andropogoneae clade? And how does climate impact accumulation and distribution of Mutator TEs across both taxa? <br>
 
 For each of ~270 maize inbreds, as well as active transposon lines BonnMu and UniformMu:
 
