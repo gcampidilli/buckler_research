@@ -23,4 +23,13 @@ For each of ~270 maize inbreds, as well as active transposon line BonnMu:
   - Sort and filter the output to produce \*.sortedfiltered.MuTIR.bam for each of the SR bams on iRods
 2. combine_bams_to_fasta.R
   - Combine \*.sortedfiltered bams of the same genotype, as each inbred has multiple bams
-
+#### Blast bam files against Mutator TE sequence and filter outputs
+1. blast_and_extract_tsds.sh
+  - Shell script that applies R scripts to all ~270 inbred fastas
+2. goodman_fastas.zip
+3. extract_tsds.R
+  - Retrieve target site duplication sequences for each insertion, this acts as the 'ID' of the insertion
+4. filter_tsds.R
+  - Filters insertions from TSD output file such that we exclude all TSDs that aren't 9bp, keep TSD duplicates bc multiple times coverage
+5. filtered_goodman_insertion_df.zip
+  - folder with output dataframe for each inbred
