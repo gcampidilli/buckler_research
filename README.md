@@ -33,3 +33,16 @@ For each of ~270 maize inbreds in the Goodman Maize Diversity Panel:
     - Filters insertions from TSD output file such that we exclude all TSDs that aren't 9bp, keep TSD duplicates bc multiple times coverage
 5. filtered_goodman_insertion_df.zip
     - folder with output dataframe for each inbred
+#### Construct TE insertion matrix
+1. insertion_matrix_pt1.sh
+    - Utilizes prematrix_df_setup.R and combine_prematrix_df.R
+2. prematrix_df_setup.R
+    - Creates precurser to insertion matrix for each inbred
+3. combine_prematrix_df.R
+    - Combines  all inbred prematrices into one total prematix, from which the insertion matrix is constructed
+4. pre_insertion_matricies folder
+    - Has preinsertion matricies for the exact insertion locations (within 18bp of eachother), insertion locations rounded to the nearest hundred bp, and insertion locations rounded to nearest thousand bp
+5. insertion_matrix_pt2.R
+    - Construct insertion matricies given the pre-insertion matricies
+6. insertion_matricies folder
+    - Has insertion matricies for the exact insertion locations (within 18bp of eachother), insertion locations rounded to the nearest hundred bp, and insertion locations rounded to nearest thousand bp
