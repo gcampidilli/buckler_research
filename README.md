@@ -31,8 +31,12 @@ For each of ~270 maize inbreds in the Goodman Maize Diversity Panel:
     - Retrieve target site duplication sequences for each insertion, this acts as the 'ID' of the insertion
 4. filter_tsds.R
     - Filters insertions from TSD output file such that we exclude all TSDs that aren't 9bp, keep TSD duplicates bc multiple times coverage
-5. filtered_goodman_insertion_df.zip
-    - folder with output dataframe for each inbred
+5. filtered_goodman_insertion_df.zip folder
+6. flanking_extraction_blast.sh
+    - utilizes extract_tsd_blank.R
+7. extract_tsd_blank.R
+    - extract bp flanking TSDs
+8. blast_out_flanking_filtered.zip folder
 #### Construct TE insertion matrix
 1. insertion_matrix_pt1.sh
     - Utilizes prematrix_df_setup.R and combine_prematrix_df.R
