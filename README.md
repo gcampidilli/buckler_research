@@ -33,3 +33,4 @@ For each of ~270 maize inbreds in the Goodman Maize Diversity Panel:
     - Filters insertions from TSD output file such that we exclude all TSDs that aren't 9bp, keep TSD duplicates bc multiple times coverage
 5. filtered_goodman_insertion_df.zip
     - folder with output dataframe for each inbred
+#### Construct TE insertion matrix
