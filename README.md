@@ -17,7 +17,7 @@ For each of ~270 maize inbreds, as well as active transposon line BonnMu:
 | 6 | Phenotype Association Analysis |
 
 
-### Map short-read bam files to Mutator TE sequence
+#### Map short-read bam files to Mutator TE sequence
 1. whileloop_map_to_mu_from_iRods.sh
   - Map the SR bams to the TIR sequence of Mutator
   - Sort and filter the output to produce \*.sortedfiltered.MuTIR.bam for each of the SR bams on iRods
