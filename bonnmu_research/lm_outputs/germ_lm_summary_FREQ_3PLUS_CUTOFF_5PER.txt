@@ -1,0 +1,27 @@
+
+Call:
+lm(formula = germ_pheno ~ copy_num + utr5 + cds + intron + utr3 + 
+    promoter + upstream_of_promoter + intergenic, data = germ_lm_df)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-2.4199 -1.1266 -0.2805  1.2547  1.8742 
+
+Coefficients:
+                      Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          -1.376092   0.054997 -25.021  < 2e-16 ***
+copy_num              0.002849   0.001577   1.807    0.071 .  
+utr5                  0.090581   0.066695   1.358    0.175    
+cds                   0.067245   0.074745   0.900    0.368    
+intron               -0.042580   0.071454  -0.596    0.551    
+utr3                  0.121209   0.193968   0.625    0.532    
+promoter             -0.471518   0.105156  -4.484 7.83e-06 ***
+upstream_of_promoter -0.154965   0.141346  -1.096    0.273    
+intergenic           -0.089277   0.088856  -1.005    0.315    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 1.232 on 1662 degrees of freedom
+Multiple R-squared:  0.01666,	Adjusted R-squared:  0.01193 
+F-statistic: 3.521 on 8 and 1662 DF,  p-value: 0.0004783
+

@@ -1,0 +1,27 @@
+
+Call:
+lm(formula = chlor_pheno ~ copy_num + utr5 + cds + intron + utr3 + 
+    promoter + upstream_of_promoter + intergenic, data = chlor_lm_df)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3.3104  0.1567  0.1854  0.2045  1.6824 
+
+Coefficients:
+                       Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          -0.2188650  0.0314487  -6.959 4.90e-12 ***
+copy_num              0.0011958  0.0007873   1.519   0.1290    
+utr5                 -0.4219262  0.0712298  -5.923 3.82e-09 ***
+cds                  -0.4659343  0.1028267  -4.531 6.28e-06 ***
+intron               -0.4134458  0.0902726  -4.580 5.00e-06 ***
+utr3                 -0.6724695  0.2727391  -2.466   0.0138 *  
+promoter             -0.4635024  0.1864276  -2.486   0.0130 *  
+upstream_of_promoter -0.2315738  0.1475140  -1.570   0.1166    
+intergenic            0.1676564  0.1632200   1.027   0.3045    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.7164 on 1662 degrees of freedom
+Multiple R-squared:  0.07381,	Adjusted R-squared:  0.06935 
+F-statistic: 16.56 on 8 and 1662 DF,  p-value: < 2.2e-16
+
