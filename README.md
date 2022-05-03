@@ -18,9 +18,9 @@ For each of ~270 maize inbreds, as well as active transposon line BonnMu:
 
 
 #### Map short-read bam files to Mutator TE sequence
-1. whileloop_map_to_mu_from_iRods.sh
+whileloop_map_to_mu_from_iRods.sh
   - Map the SR bams to the TIR sequence of Mutator
   - Sort and filter the output to produce \*.sortedfiltered.MuTIR.bam for each of the SR bams on iRods
-2. combine_bams_to_fasta.R
+combine_bams_to_fasta.R
   - Combine \*.sortedfiltered bams of the same genotype, as each inbred has multiple bams
 
