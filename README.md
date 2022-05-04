@@ -13,7 +13,7 @@ Then, for all ~270 maize inbreds in the Goodman Maize Diversity Panel the follow
 | 1 | Map short-read bam files to Mutator TE sequence |
 | 2 | Blast bam files against Mutator TE sequence and filter outputs|
 | 3 | Construct TE insertion matrix |
-| 4 | Identify what gene region each TE inserted into (ex. "Promoter","UTR5", "Exon", "Intron", "UTR3", "Intergenic")|
+| 4 | Identify gene region at location of each TE insertion (ex. "Promoter","UTR5", "Exon", "Intron", "UTR3", "Intergenic")|
 | 5 | Expression Association Analysis |
 | 6 | Phenotype Association Analysis |
 
@@ -50,4 +50,21 @@ Then, for all ~270 maize inbreds in the Goodman Maize Diversity Panel the follow
 5. insertion_matrix_pt2.R
     - Construct insertion matricies given the pre-insertion matricies
 6. insertion_matricies folder
-    - Has insertion matricies for the exact insertion locations (within 18bp of eachother), insertion locations rounded to the nearest hundred bp, and insertion locations rounded to nearest thousand bp
+    - Has insertion matricies (V5)for the exact insertion locations (within 18bp of eachother), insertion locations rounded to the nearest hundred bp, and insertion locations rounded to nearest thousand bp
+    - V4 exact insertion matrix
+7. convert_to_v4.R
+    -  convert insertion matrix to v4 gene list from v5
+8. ins_mat_to_hapmap.R
+    - convert insertion matrix from csv to hapmap format
+#### Identify gene region at location of each TE insertion
+1. insertion_categorization.sh
+    - Utilizes assign_insertion_categories.R and combine_summaries.R
+2. assign_insertion_categories.R
+    - Use B73 reference genome to categorize which gene region each insertion inserted into (ex. "Promoter","UTR5", "Exon", "Intron", "UTR3", "Intergenic")
+3. combine_summaries.R
+    - Create summary total_generegion_summary.csv
+4. total_generegion_summary.csv
+    - For each inbred, has statistics about # of insertion and proportion of insertions in each gene region category
+5. insertion_category_graphs_by_inbred folder
+    - Barplot of proportion of insertions in each gene region for each inbred
+
