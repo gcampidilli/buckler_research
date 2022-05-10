@@ -67,4 +67,24 @@ Then, for all ~270 maize inbreds in the Goodman Maize Diversity Panel the follow
     - For each inbred, has statistics about # of insertion and proportion of insertions in each gene region category
 5. insertion_category_graphs_by_inbred folder
     - Barplot of proportion of insertions in each gene region for each inbred
-
+#### Expression Association Analysis
+1. expression_analysis_funcs.R
+    - sequence of functions that calculate t-tests for gene expression ~ insertions for each gene, and returns pvalue
+    - required input: expression data (kremling_expression), ins_mat_v4, and reference genome object - I used ref_genes.rda which is from B73 ref genome
+2. kremling_expression folder
+3. ins_mat_v4.rda
+4. run_exp_analysis_funcs.R
+    - code that runs all the functions from 1. on kremling_expression data
+5. exp_ins_mat folder
+    - contains intermediate datasets for every step of the expression_analysis_functions, including:
+        -orig_subset
+        -granges
+        -indv_gene
+        -combined_gene
+        -exp_dat_long
+6. pval_t_test_df folder   
+    - contains individual datasets for each tissue for pvalue from t-tests gene expression ~ insertions 
+7. combine_pvals.R
+    - script that combines contents of pval_t_test_df folder into one dataframe, combined_pval_t_test_df.csv
+8. combined_pval_t_test_df.csv
+    - rows are genes (75), columns are tissue types (8), cells are pvalue for gene expression ~ insertions into that gene for the particular tissue
