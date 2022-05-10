@@ -77,11 +77,11 @@ Then, for all ~270 maize inbreds in the Goodman Maize Diversity Panel the follow
     - code that runs all the functions from 1. on kremling_expression data
 5. exp_ins_mat folder
     - contains intermediate datasets for every step of the expression_analysis_functions, including:
-        -orig_subset
-        -granges
-        -indv_gene
-        -combined_gene
-        -exp_dat_long
+        -   orig_subset
+        -   granges
+        -   indv_gene
+        -   combined_gene
+        -   exp_dat_long
 6. pval_t_test_df folder   
     - contains individual datasets for each tissue for pvalue from t-tests gene expression ~ insertions 
 7. combine_pvals.R
