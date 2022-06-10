@@ -2,7 +2,7 @@
 
 Buckler Lab for Maize Genetics and Diversity: https://www.maizegenetics.net/ <br>
 
-My research questions: <br>
+Research questions: <br>
 How are Mutator transposable elements (TEs) conserved across maize genotypes? What is the impact of Mutator insertions on plant fitness? <br>
 
 As a primer, Mutator TE behavior was investigated in the active mutator line BonnMu. These files are in bonnmu_research.<br/><br/>
